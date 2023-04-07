@@ -15,6 +15,7 @@ module.exports = {
       'black': {
         DEFAULT: '#191919',
         light: 'rgba(0, 0, 0, 0.5)',
+        extralight: 'rgba(0, 0, 0, 0.07)',
       },
       'white': {
         DEFAULT: '#FFFFFF',
