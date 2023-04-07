@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/style.css">
+    <title>Audiophile</title>
+</head>
+
+<body class="bg-black px-0 xl:px-10">
+    <header class="flex justify-between p-5 border-b border-white-extralight">
+        <h1 class="flex items-center">
+            <img class="mr-5 md:hidden" src="images/icon-hamburguer.svg" alt="">
+            <img src="images/logo.svg" alt="Audiophile">
+        </h1>
+        <ul class="hidden md:flex uppercase text-white gap-x-10">
+            <li><a class="hover:text-primary transition text-primary" href="index.html">Home</a></li>
+            <li><a class="hover:text-primary transition" href="#">Headphones</a></li>
+            <li><a class="hover:text-primary transition" href="#">Speakers</a></li>
+            <li><a class="hover:text-primary transition" href="#">Earphones</a></li>
+        </ul>
+        <button>
+            <img src="images/cart.svg" alt="Cart">
+        </button>
+    </header>
+    <main>
+        <section class="text-center text-white-light mt-24 xl:mt-10 lg:flex lg:items-center">
+            <div class="space-y-5 lg:w-1/2">
+                <p class="text-md uppercase font-bold tracking-[.3em]">New product</p>
+                <h2 class="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase px-5">
+                    XX99 mark
+                    II headphones
+                </h2>
+                <p class="px-5 sm:px-20">
+                    Experience natural, lifelike audio and exceptional build quality made for the pasionate music
+                    enthusiast.
+                </p>
+                <button
+                    class="text-white bg-primary hover:bg-primary-light  px-5 py-3 leading-tight rounded uppercase tracking-wide">
+                    See product
+                </button>
+            </div>
+            <div class="flex justify-center lg:w-1/2">
+                <picture class="relative bottom-96 -z-10 lg:static">
+                    <source srcset="images/image-hero-sm.jpg" media="(max-width: 640px)" />
+                    <source srcset="images/image-hero-md.jpg" media="(max-width: 768px)" />
+                    <img src="images/image-hero.jpg" alt="XX99 mark II headphones" />
+                </picture>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
