@@ -14,6 +14,7 @@ module.exports = {
       },
       'black': {
         DEFAULT: '#191919',
+        hover: 'rgba(25, 25, 25, .9)',
         light: 'rgba(0, 0, 0, 0.5)',
         extralight: 'rgba(0, 0, 0, 0.07)',
       },
@@ -25,7 +26,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'hero': "url('../src/images/image-hero.jpg')",
+        'circles': "url('../src/images/circles.svg)",
       },
     },
   },
