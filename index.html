@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css">
     <title>Audiophile</title>
 </head>
 
-<body class="bg-black px-0 xl:px-10">
-    <header class="flex justify-between p-5 border-b border-white-extralight">
+<body class="bg-black xl:max-w-screen-2xl xl:mx-auto">
+    <header class="lg:px-20 flex justify-between p-5 border-b border-white-extralight">
         <h1 class="flex items-center">
-            <img class="mr-5 md:hidden" src="images/icon-hamburguer.svg" alt="">
+            <img class="mr-5 md:hidden" src="src/images/icon-hamburguer.svg" alt="">
             <img src="src/images/logo.svg" alt="Audiophile">
         </h1>
         <ul class="hidden md:flex uppercase text-white gap-x-10">
@@ -29,14 +29,15 @@
         </button>
     </header>
     <main>
-        <section class="text-center text-white-light mt-24 xl:mt-10 lg:flex lg:items-center">
-            <div class="space-y-5 lg:w-1/2">
-                <p class="text-md uppercase font-bold tracking-[.3em]">New product</p>
-                <h2 class="text-white text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold uppercase px-5">
+        <section
+            class="lg:px-20 h-96 text-center lg:text-left text-white-light mt-24 xl:mt-10 lg:flex lg:items-center lg:justify-between">
+            <div class="space-y-5 lg:w-5/12">
+                <p class="text-md uppercase tracking-[.3em]">New product</p>
+                <h2 class="text-white text-3xl sm:text-5xl md:text-6xl font-bold uppercase px-5 lg:px-0">
                     XX99 mark
                     II headphones
                 </h2>
-                <p class="px-5 sm:px-20">
+                <p class="px-5 sm:px-20 lg:px-0">
                     Experience natural, lifelike audio and exceptional build quality made for the pasionate music
                     enthusiast.
                 </p>
@@ -45,12 +46,41 @@
                     See product
                 </button>
             </div>
-            <div class="flex justify-center lg:w-1/2">
-                <picture class="relative bottom-96 -z-10 lg:static">
-                    <source srcset="src/images/image-hero-sm.jpg" media="(max-width: 640px)" />
+            <div
+                class="flex justify-center lg:w-7/12 relative bottom-[25rem] md:bottom-[30rem] min-[860px]:bottom-[27rem] -z-10 lg:static">
+                <picture class="">
+                    <source srcset="src/images/image-hero-sm.jpg" media="(max-width: 470px)" />
+                    <source srcset="src/images/image-hero-470-640.jpg" media="(max-width: 640px)" />
                     <source srcset="src/images/image-hero-md.jpg" media="(max-width: 768px)" />
                     <img src="src/images/image-hero.jpg" alt="XX99 mark II headphones" />
                 </picture>
+            </div>
+        </section>
+
+        <section class="bg-white mt-24 md:mt-28 lg:mt-40 lg:px-20 space-y-20 lg:flex lg:justify-center">
+            <div class="pt-20 flex flex-col justify-center items-center gap-5 cursor-pointer">
+                <img src="src/images/image-category-thumbnail-headphones.png" alt="headphones" class="w-1/2 lg:w-3/4">
+                <h3 class="uppercase font-semibold text-2xl">Headphones</h3>
+                <a href="#" class="text-sm font-bold text-black-light uppercase flex items-center gap-2">
+                    Shop
+                    <img src="src/images/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5 cursor-pointer">
+                <img src="src/images/image-category-thumbnail-speakers.png" alt="speakers" class="w-1/2 lg:w-3/4">
+                <h3 class="uppercase font-semibold text-2xl">Speakers</h3>
+                <a href="#" class="text-sm font-bold text-black-light uppercase flex items-center gap-2">
+                    Shop
+                    <img src="src/images/arrow-right.svg" alt="">
+                </a>
+            </div>
+            <div class="flex flex-col justify-center items-center gap-5 cursor-pointer">
+                <img src="src/images/image-category-thumbnail-earphones.png" alt="earphones" class="w-1/2 lg:w-3/4">
+                <h3 class="uppercase font-semibold text-2xl">Earphones</h3>
+                <a href="#" class="text-sm font-bold text-black-light uppercase flex items-center gap-2">
+                    Shop
+                    <img src="src/images/arrow-right.svg" alt="">
+                </a>
             </div>
         </section>
     </main>

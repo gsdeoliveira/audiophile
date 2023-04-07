@@ -12,10 +12,13 @@ module.exports = {
         DEFAULT: '#D87D4A',
         light: '#FBAF85',
       },
-      'black': '#191919',
+      'black': {
+        DEFAULT: '#191919',
+        light: 'rgba(0, 0, 0, 0.5)',
+      },
       'white': {
         DEFAULT: '#FFFFFF',
-        light: 'rgba(255, 255, 255, .5)',
+        light: 'rgba(255, 255, 255, .7)',
         extralight: 'rgba(255, 255, 255, .1)',
       },
     },
