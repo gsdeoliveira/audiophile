@@ -23,6 +23,7 @@ module.exports = {
         light: 'rgba(255, 255, 255, .7)',
         extralight: 'rgba(255, 255, 255, .1)',
       },
+      'gray': '#DCDCDC',
     },
     extend: {
       backgroundImage: {

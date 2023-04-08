@@ -4,7 +4,7 @@
 
 @layer components {
     .btn {
-      @apply text-white font-semibold px-5 py-3 leading-tight rounded uppercase tracking-wide;
+      @apply text-white font-semibold px-5 py-3 leading-tight rounded-sm uppercase tracking-wide;
     }
     
   }
@@ -35,6 +35,6 @@
 
   @media (min-width: 1280px) {
     .bg-circles {
-      background-position: -50% 30%;
+      background-position: -30% 30%;
     }
   }
